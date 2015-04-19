@@ -1,0 +1,36 @@
+<ion-view title="News">
+    <ion-content>
+    	<ion-list  ng-repeat="new in news">
+	        <div class="list card">
+	
+			  <div class="item item-icon-left">
+			  	<i class="icon ion-social-rss"></i>
+			    <h2>{{new.name}}</h2>
+			    <p>{{new.type}}</p>
+			  </div>
+			
+			  <div class="item item-body">
+			    <p>
+			      {{new.text}}
+			    </p>
+			  </div>
+			
+			  <div class="item tabs tabs-secondary tabs-icon-left">
+			  	<a class="button button-energized" href="#/menu/newBooking">
+			      Booking
+			    </a>
+			    <a class="tab-item" href="#">
+			      <i class="icon ion-social-twitter"></i>
+			    </a>
+			    <a class="tab-item" href="#">
+			      <i class="icon ion-social-facebook"></i>
+			    </a>
+			    <a class="tab-item" href="#">
+			      <i class="icon ion-social-vimeo"></i>
+			    </a>
+			  </div>
+			  
+			</div>
+        </ion-list>
+    </ion-content>
+</ion-view>

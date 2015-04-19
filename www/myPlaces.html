@@ -1,0 +1,13 @@
+<ion-view title="My Places">
+	<ion-content>
+		<ion-list ng-repeat="place in places">
+			<div class="item item-icon-left item-button-right">
+			  	<i class="icon ion-ios-location"></i>
+			    <h2>{{place.name}}</h2>
+			    <p>{{place.address}}</p>
+			    <p>{{place.time}}</p>
+			    <a href="#/menu/newBooking" class="button button-energized">Booking</a>
+			</div>
+		</ion-list>
+	</ion-content>
+</ion-view>

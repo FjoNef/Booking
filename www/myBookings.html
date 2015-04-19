@@ -1,0 +1,13 @@
+<ion-view title="My Bookings">
+	<ion-content>
+		<ion-list ng-repeat="bm in bookings">
+			<div class="item item-icon-left item-button-right">
+				<i class="icon ion-ios-bookmarks"></i>
+				<h2>{{bm.name}}</h2>
+				<p>{{bm.info}}</p>
+				<p>{{bm.time}}</p>
+				<button class="button button-icon button-clear ion-close-circled"></button>
+			</div>
+		</ion-list>
+	</ion-content>
+</ion-view>

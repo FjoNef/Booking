@@ -1,0 +1,32 @@
+<ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu side="left">
+        <ion-content>
+        	<a class="item item-avatar" href="#">
+		      <img src="img/logo.png">
+		      <h2>Ivan Ivanich</h2>
+		    </a>
+            <ion-list>
+                <a href="#/menu/news" class="item" menu-close>News</a>
+                <a href="#/menu/myPlaces" class="item" menu-close>My Places</a>
+                <a href="#/menu/myBookings" class="item" menu-close>My Bookings</a>
+            </ion-list>
+        </ion-content>
+        <ion-footer-bar class="bar-light">
+        	<div class="col col-33 col-offset-33">
+        		<a href="#/login" class="button button-energized" menu-close>Log Out</a>
+        	</div>
+        </ion-footer-bar>
+    </ion-side-menu>
+    
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar-energized">
+
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+          </button>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+
+      <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+</ion-side-menus>
