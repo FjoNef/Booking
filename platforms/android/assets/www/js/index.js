@@ -5,14 +5,14 @@ angular.module('app', ['ionic'])
     
     .state('login', {
       url: '/login',
-      templateUrl: 'login.html'
+      templateUrl: 'templates/login.html'
     })
     
     .state('menu.news', {
       url: '/news',
       views: {
           'menuContent' :{
-            templateUrl: 'news.html',
+            templateUrl: 'templates/news.html',
             controller : 'NewsCtrl'
           }
       }
@@ -22,7 +22,7 @@ angular.module('app', ['ionic'])
       url: '/myPlaces',
       views: {
           'menuContent' :{
-            templateUrl: 'myPlaces.html',
+            templateUrl: 'templates/myPlaces.html',
             controller : 'PlacesCtrl'
           }
       }
@@ -32,7 +32,7 @@ angular.module('app', ['ionic'])
       url: '/newBooking',
       views: {
           'menuContent' :{
-            templateUrl: 'newBooking.html'
+            templateUrl: 'templates/newBooking.html'
           }
       }
     })
@@ -41,7 +41,7 @@ angular.module('app', ['ionic'])
       url: '/myBookings',
       views: {
           'menuContent' :{
-            templateUrl: 'myBookings.html',
+            templateUrl: 'templates/myBookings.html',
             controller : 'BookingsCtrl'
           }
       }
@@ -50,7 +50,7 @@ angular.module('app', ['ionic'])
     .state('menu', {
       url: '/menu',
       abstract: true,
-      templateUrl: 'menu.html'
+      templateUrl: 'templates/menu.html'
     });
   
   $urlRouterProvider.otherwise('/login');
