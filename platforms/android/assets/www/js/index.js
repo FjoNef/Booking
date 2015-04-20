@@ -65,13 +65,13 @@ angular.module('app', ['ionic'])
 .controller('NewsCtrl', function($scope) {
   
   $scope.news = [{
-	  name : 'Pub',
-	  type : 'new offer',
-	  text : "This is a \"Facebook\" styled Card. The header is created from a Thumbnail List item,\nthe content is from a card-body consisting of an image and paragraph text. The footer\nconsists of tabs, icons aligned left, within the card-footer."
+	  name : 'Паб',
+	  type : 'Новая акция',
+	  text : "Сверхкрутая акция только для вас!!!"
   },{
-	  name : 'Bar',
+	  name : 'Парикмахерская "У леса"',
 	  type : 'new offer',
-	  text : "This is a \"Facebook\" styled Card. The header is created from a Thum"
+	  text : "Еще одна отличная акция от нас!)"
   }];
   
 })
@@ -79,13 +79,13 @@ angular.module('app', ['ionic'])
 .controller('PlacesCtrl', function($scope) {
   
   $scope.places = [{
-	  name : 'Bar',
-	  address : 'Spb, app. 66',
-	  time : '13-22'
+	  name : 'Парикмахерская "У леса"',
+	  address : 'Невский 51',
+	  time : '13.00-22.00'
   },{
-	  name : 'Pub',
-	  address : 'Moscow, 65 ave.',
-	  time : '16-02'
+	  name : 'Паб',
+	  address : 'наб. Обводного канала 41',
+	  time : '16.00-02.00'
   }];
   
 })
@@ -93,12 +93,12 @@ angular.module('app', ['ionic'])
 .controller('BookingsCtrl', function($scope) {
   
   $scope.bookings = [{
-	  name : 'Bar',
-	  info : 'table 3',
+	  name : 'Парикмахерская',
+	  info : 'Лена',
 	  time : '15:30'
   },{
-	  name : 'Pub',
-	  info : 'table 15',
+	  name : 'Паб',
+	  info : 'Столик 15',
 	  time : '23:20'
   }];
   

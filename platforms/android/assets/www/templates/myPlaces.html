@@ -1,9 +1,9 @@
-<ion-view title="My Places">
+<ion-view title="Мои места">
 	<ion-content>
 		<div class="list list-inset">
 		  <label class="item item-input">
 		    <i class="icon ion-search placeholder-icon"></i>
-		    <input type="text" placeholder="Search">
+		    <input type="text" placeholder="Поиск">
 		  </label>
 		</div>
 		<ion-list ng-repeat="place in places">
@@ -12,7 +12,7 @@
 			    <h2>{{place.name}}</h2>
 			    <p>{{place.address}}</p>
 			    <p>{{place.time}}</p>
-			    <a href="#/menu/newBooking" class="button button-energized">Booking</a>
+			    <a href="#/menu/newBooking" class="button button-energized">Бронь</a>
 			</div>
 		</ion-list>
 	</ion-content>
